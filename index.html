@@ -1,23 +1,110 @@
 <!DOCTYPE html>
-<html> lang="en">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
-    <link rel="stylesheet" href="css/style.css">"
+    <h1>Website Konversi</h1>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-    <!-- Header Conten-->
-     <header></header>
+    <div id="progress-bar"></div>
+    <div id="toast" class="toast">Konversi Berhasil!</div>
 
-    <!--MAin conten-->
-      <main></main>
+    <!-- Header Content -->
+    <header>
+        <h1>Website Konversi Suhu - pakbudi</h1>
+        <button id="darkModeToggle" style="margin-top: 10px;">Toggle Dark Mode</button>
+    </header>
 
-    <!--FooterConten-->
-    <footer></footer>
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction -->
+        <section class="section-content">
+            <p>Apa itu Lorem Ipsum?  
+            Lorem Ipsum adalah teks dummy yang sederhana dari industri percetakan dan penyusunan huruf. 
+            Lorem Ipsum telah menjadi teks dummy standar industri sejak tahun 1500-an, 
+            ketika seorang pencetak yang tidak dikenal mengambil galley huruf dan mengacaknya untuk membuat buku contoh hurufnya. 
+            Teks ini telah bertahan tidak hanya selama lima abad, 
+            tetapi juga melompat ke penyusunan huruf elektronik yang canggih, 
+            tetap pada dasarnya tidak berubah. Teks ini dipopulerkan pada tahun 1960-an dengan rilis lembaran Letraset yang berisi kutipan Lorem Ipsum, 
+            dan baru-baru ini dengan perangkat lunak penerbitan desktop canggih seperti Aldus PageMaker yang menyertakan versi Lorem Ipsum.</p>
+        </section>
+
+        <!-- Form Konversi Suhu -->
+        <section class="section-content">
+            <form>
+                <div class="section-item">
+                    <label for="konversi-input">Celcius (&deg;C)</label>
+                </div>
+
+                <div class="section-item">
+                    <textarea id="konversi-input"></textarea>
+                </div>
+                
+                <!-- Form Action -->
+                <div class="section-item">
+                    <button type="button" class="bg-1">Konversi</button>
+                    <button type="button" class="bg-2">Reset</button> 
+                    <button type="button" class="bg-3">Reverse</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Hasil Konversi Suhu -->
+        <section class="section-content">
+            <div class="section-item">
+                <label for="result-input">Fahrenheit (&deg;F)</label>
+            </div>
+
+            <div class="section-item">
+                <textarea id="result-input" readonly></textarea>
+            </div>
+        </section>
+
+        <!-- Penjelasan --> 
+        <section class="section-content">
+            <div class="section-item">
+                <label for="calculate-detail">Cara Kalkulasi:</label>
+            </div>
+
+            <div class="section-item">
+                <textarea id="calculate-detail" readonly></textarea>
+            </div>
+        </section>    
+         
+        <!-- Informasi Tambahan -->
+        <section class="section-content">
+            <header>
+                <h2>Cara konversi dari Celcius (&deg;C) ke Fahrenheit</h2>
+            </header>
+
+            <hr/>
+
+            <!-- Konten Informasi -->
+            <article>
+                <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (&deg;F) dapat dihitung dengan:</p>
+
+                <!-- Formula -->
+                <div class="formula">
+                    S<sub>(&deg;F)</sub> = S<sub>(&deg;C)</sub> × 9/5 + 32
+                </div>
+                <div>atau</div>
+                <div class="formula">
+                    S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> × 1.8) + 32
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <p>&copy; 2025 pemula. All rights reserved.</p>
+    </footer>
+
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
 </body>
-
 </html>

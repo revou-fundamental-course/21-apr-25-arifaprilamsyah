@@ -1,0 +1,179 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: background-color 0.5s ease;
+}
+
+/* Main Section */
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Section Item */
+.section-item {
+  margin-bottom: 15px;
+}
+
+/* Label */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  background: white;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button Colors */
+.bg-1 {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.bg-2 {
+  background-color: #f44336;
+  color: white;
+}
+
+.bg-3 {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Button Hover Effect */
+button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* Formula Style */
+.formula {
+  background-color: #e0f7fa;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 4px solid #00acc1;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+footer {
+  background-color: transparent;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* HR line */
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background: #ccc;
+}
+
+/* Toast Notification */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+/* Tampilkan toast */
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Progress Bar di atas */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #4CAF50;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.4s ease;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #333;
+}
+
+.dark-mode footer {
+  color: #ccc;
+}
+
+.dark-mode textarea,
+.dark-mode input,
+.dark-mode button {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}

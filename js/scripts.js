@@ -47,7 +47,7 @@ function resetForm() {
 
 // --- Fungsi Reverse Arah Konversi ---
 function reverseKonversi() {
-    isCelciusToFahrenheit = !isCelciusToFahrenheit;
+    letisCelciusToFahrenheit = true;
 
     const inputLabel = document.querySelector('label[for="konversi-input"]');
     const outputLabel = document.querySelector('label[for="result-input"]');

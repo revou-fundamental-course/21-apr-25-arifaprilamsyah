@@ -72,31 +72,6 @@ function showToast(message) {
     }, 2000);
 }
 
-// --- Fungsi Dark Mode Toggle ---
-function setDarkMode(isDark) {
-    if (isDark) {
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'true');
-    } else {
-        document.body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode', 'false');
-    }
-}
-
-// --- Event Listener untuk Dark Mode Toggle ---
-darkModeToggle.addEventListener('click', function () {
-    const isDark = document.body.classList.contains('dark-mode');
-    setDarkMode(!isDark);
-});
-
-// --- Cek Dark Mode saat Load Halaman ---
-window.addEventListener('load', function () {
-    const darkMode = localStorage.getItem('darkMode');
-    if (darkMode === 'true') {
-        document.body.classList.add('dark-mode');
-    }
-});
-
 // --- Event Listener Tombol ---
 konversiButton.addEventListener('click', konversiSuhu);
 resetButton.addEventListener('click', resetForm);
@@ -117,5 +92,5 @@ const konversiButton = document.querySelector('.bg-1');
 const resetButton = document.querySelector('.bg-2');
 const reverseButton = document.querySelector('.bg-3');
 const toast = document.getElementById('toast');
-const darkModeToggle = document.getElementById('darkModeToggle');
+
 
